@@ -5,6 +5,7 @@ import com.google.gson.annotations.SerializedName as Name
 
 data class ForceReplyMarkup(
     @Name("force_reply") val forceReply: Boolean = true,
+    @Name("input_field_placeholder") val inputFieldPlaceholder: String? = null,
     val selective: Boolean? = null
 ) : ReplyMarkup {
     private companion object {
